@@ -1,0 +1,113 @@
+/* Selecteur target pour le surlignage des sources */
+div:target {
+    -webkit-animation: target-fade 4s 1;
+    -moz-animation: target-fade 4s 1;
+}
+dt:target, dt:target + dd {
+    -webkit-animation: target-fade 4s 1;
+    -moz-animation: target-fade 4s 1;
+}
+
+@-webkit-keyframes target-fade {
+    0% { background-color: rgb(196,240,197); }
+    100% { background-color: rgba(252,249,207,0); }
+}
+
+@-moz-keyframes target-fade {
+    0% { background-color: rgb(196,240,197); }
+    100% { background-color: rgba(0,0,0,0); }
+}
+
+.white {
+    color: white;
+}
+
+.white:hover {
+    color: rgba(255, 255, 255, 0.712);
+}
+
+.jumbotron {
+    background-color: #138496;
+    padding: 25px;
+}
+
+.flags {
+    border-radius: 2px;
+}
+
+.text-skipline {
+    padding-bottom: 1.6em;
+}
+
+.img-skipline {
+    padding-bottom: 1em;
+}
+
+.quote-bottom {
+    margin-bottom: -0.8em;
+}
+
+/* Rendu dynamique selon le viewport */
+
+@media screen and (max-width: 575px) {
+    .display-1 {
+        font-size: 2em;
+    }
+    .display-4 {
+        font-size: 2.7em;
+    }
+    .footer-img {
+        border-right: 0px;
+    }
+    .hr-sm{
+        background-color:rgba(255, 255, 255, 0.623);
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .display-1 {
+        font-size: 3.5em;
+    }
+    .display-4 {
+        font-size: 2.7em;
+    }
+    .hr-sm{
+        background-color:rgba(255, 255, 255, 0.623);
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+    .display-1 {
+        font-size: 4em;
+    }
+    .display-4 {
+        font-size: 2.7em;
+    }
+    .hr-sm{
+        display: none;
+    }
+    .footer-img {
+        border-right:solid 1px rgba(255, 255, 255, 0.623);
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    .display-1 {
+        font-size: 5em;
+    }
+    .display-4 {
+        font-size: 3.5em;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .display-1 {
+        font-size: 6em;
+    }
+    .display-4 {
+        font-size: 4.5em;
+    }
+}
